@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pasword generator javascript project..</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>password Generator</h1>
+    <div class="inputbox">
+        <input type="text" class="passbox" disabled id="passbox">
+    </div>
+    <input type="range" min="1" max="30" value="4" id="inputslider">
+    <div class="row">
+    <p>password length</p>
+    <span id="slidervalue"></span>
+    </div>
+    <div class="roww">
+    <label for="bazi">Include lower case letter (a - z )</label>
+    <input type="checkbox" class="reo" id="bazi">
+    </div>
+    <div class="roww">
+    <label for="bazi1">Include capital letter (A to z)</label>
+    <input type="checkbox" class="reo" id="bazi1">
+    </div>
+    <div class="roww">
+    <label for="bazi2">Include numbers (1 to 9)</label>
+    <input type="checkbox" class="reo" id="bazi2">
+    </div>
+    <div class="roww">
+    <label for="bazi3">special numbers (@ - $)</label>
+    <input type="checkbox" class="reo" id="bazi3">
+    </div>
+    <button type="button" id="genbtn">Generate password</button>
+
+</div> 
+</body>
+</html>
