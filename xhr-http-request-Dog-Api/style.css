@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.dog {
+    height: 50%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.dog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 500px) {
+
+    .dog {
+        height: 20vh;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+        border-radius: 40px;
+
+    }
+
+    .dog img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+}
