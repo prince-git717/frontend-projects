@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REVRS — String Reversal Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="bg-glow glow-3"></div>
+
+  <div class="particles" id="particles"></div>
+
+  <main class="container">
+
+    <header class="header">
+      <div class="logo-badge">SYS</div>
+      <h1 class="title">REVRS<span class="title-dot">.</span></h1>
+      <p class="subtitle">// STRING_REVERSAL_PROTOCOL v2.4</p>
+    </header>
+
+    <div class="card">
+      <div class="card-corner top-left"></div>
+      <div class="card-corner top-right"></div>
+      <div class="card-corner bottom-left"></div>
+      <div class="card-corner bottom-right"></div>
+
+      <div class="scanlines"></div>
+
+      <div class="input-group">
+        <label class="input-label">
+          <span class="label-icon">▶</span> INPUT_STRING
+        </label>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="inputText"
+            placeholder="ENTER_YOUR_TEXT_HERE..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <div class="input-border-animate"></div>
+          <div class="input-glow"></div>
+        </div>
+        <div class="char-counter"><span id="charCount">0</span> CHARS</div>
+      </div>
+
+      <button id="reverseBtn" class="btn">
+        <span class="btn-text">EXECUTE REVERSE</span>
+        <span class="btn-icon">⟳</span>
+        <div class="btn-glitch" aria-hidden="true">EXECUTE REVERSE</div>
+      </button>
+
+      <div class="divider">
+        <div class="divider-line"></div>
+        <span class="divider-text">OUTPUT</span>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="output-group">
+        <label class="input-label">
+          <span class="label-icon">◀</span> REVERSED_STRING
+        </label>
+        <div class="output-box" id="outputBox">
+          <p id="result" class="result-text">_</p>
+          <div class="output-cursor" id="cursor"></div>
+        </div>
+        <button class="copy-btn" id="copyBtn" title="Copy to clipboard">
+          <span id="copyText">⎘ COPY</span>
+        </button>
+      </div>
+
+      <div class="status-bar">
+        <span class="status-dot active"></span>
+        <span class="status-text" id="statusText">SYSTEM READY</span>
+        <span class="status-time" id="statusTime"></span>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <span>◈ NEURAL_PROC ONLINE</span>
+      <span class="footer-sep">|</span>
+      <span>LATENCY: <span id="latency">0ms</span></span>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
