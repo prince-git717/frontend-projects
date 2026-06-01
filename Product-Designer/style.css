@@ -1,0 +1,444 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  .small-div {
+      width: 12px;
+      height: 12px;
+      background-color: white;
+      border-radius: 50%;
+      z-index: 999;
+      position: absolute;
+      position: absolute;
+      transition: all ease 0.2s;
+  }
+
+  html,
+  body {
+      height: 100%;
+      width: 100%;
+  }
+
+  main {
+      background-color: black;
+      position: relative;
+  }
+
+  .editiablediv {
+      /* background-color: red; */
+      width: fit-content;
+      overflow: hidden;
+  }
+
+  .editsh1 {
+      transform: translateY(110%);
+  }
+
+  .editiablediv2 {
+      overflow: hidden;
+  }
+
+  .thirdgsap {
+      overflow: hidden;
+  }
+
+  .thirdgsap3 {
+      transform: translateY(200%);
+
+  }
+
+  .herosection {
+      background-color: black;
+      width: 100%;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      padding-bottom: 10vw;
+      flex-direction: column;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+  }
+
+  nav a {
+      color: white;
+      opacity: 0.5;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+  }
+
+  nav h3 {
+      color: #fff;
+      font-weight: 600;
+      opacity: 0.6;
+  }
+
+  .firsth1 h1 {
+      font-size: 11vw;
+      color: white;
+      opacity: 0.6;
+      line-height: 0.9;
+      text-transform: uppercase;
+  }
+
+  .secondh2 {
+      width: fit-content;
+      margin-left: 8vw;
+  }
+
+  .secondh2 h1 {
+      font-size: 11vw;
+      color: white;
+      line-height: 0.9;
+      opacity: 0.5;
+      text-transform: uppercase;
+  }
+
+  .secondh2 h4 {
+      text-align: right;
+      font-size: 1vw;
+      color: white;
+      margin-top: 10px;
+      opacity: 0.6;
+  }
+
+
+  .thiredh3 {
+      margin-top: 60px;
+
+  }
+
+  .thiredh3 h3 {
+      color: white;
+      text-align: right;
+      font-size: 1.5vw;
+      opacity: 0.6;
+  }
+
+  .ancortags {
+      margin-top: auto;
+      padding-top: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      gap: 20px;
+  }
+
+  .ancortags a {
+      color: #fff;
+      font-size: 1.3vw;
+      opacity: 0.6;
+      transform: translateY(100px);
+      font-weight: 700;
+  }
+
+  .firh1tag img {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      border-radius: 10%;
+      opacity: 0;
+  }
+
+  .circle {
+      display: flex;
+      overflow: hidden;
+      gap: 10px;
+  }
+
+  .cir1,
+  .cir2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.6;
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border-radius: 50%;
+      transform: translateY(100%);
+  }
+
+
+  .secondpart2 {
+      width: 100%;
+      height: auto;
+      color: white;
+      position: relative;
+      background-color: black;
+      padding: 20px;
+  }
+
+  .secondpart2 .firh1tag h1 {
+      font-size: 7vw;
+      opacity: 0.5;
+
+
+  }
+
+  .secondpart2 .firh1tag h4 {
+      opacity: 0.5;
+  }
+
+  .firh1tag {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      border-top: 1px solid rgba(255, 255, 255, 0.685);
+      padding-block: 40px;
+
+  }
+
+  .buttonfirst {
+      padding: 12px 25px;
+      background-color: black;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.67);
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease;
+  }
+
+  .buttonfirst:hover {
+      background-color: white;
+      color: black;
+  }
+
+  .thirdsection {
+      background-color: black;
+      color: white;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      gap: 50px;
+      align-items: center;
+  }
+
+  .themodel img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin-left: 14vw;
+  }
+
+  .textpara {
+      width: 460px;
+      height: 240px;
+  }
+
+  .lets-talk {
+      width: 108px;
+      height: 31px;
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+      border-radius: 20px;
+      margin-top: 10px;
+      cursor: pointer;
+  }
+
+  /* Now here is the responsive code */
+  @media (max-width: 768px) {
+
+    nav {
+        margin-bottom: 40px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .firsth1 h1,
+    .secondh2 h1 {
+        font-size: 13vw;
+    }
+
+    .secondh2 {
+        margin-left: 4vw;
+    }
+
+    .secondh2 h4 {
+        font-size: 1.6vw;
+    }
+
+    .thiredh3 {
+        margin-top: 40px;
+    }
+
+    .thiredh3 h3 {
+        font-size: 2.2vw;
+    }
+
+    .ancortags {
+        flex-wrap: wrap;
+        gap: 14px;
+        padding-top: 50px;
+    }
+
+    .ancortags a {
+        font-size: 2vw;
+    }
+
+    /* Second part */
+    .secondpart2 .firh1tag h1 {
+        font-size: 9vw;
+    }
+
+    .firh1tag {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-block: 28px;
+    }
+
+    .firh1tag img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Third section */
+    .thirdsection {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    .themodel img {
+        width: 220px;
+        height: 220px;
+        margin-left: 0;
+    }
+
+    .textpara {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .herosection {
+        padding: 16px;
+        padding-bottom: 16vw;
+    }
+
+    nav {
+        margin-bottom: 28px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    nav h3 {
+        font-size: 14px;
+    }
+
+    .firsth1 h1,
+    .secondh2 h1 {
+        font-size: 15vw;
+    }
+
+    .secondh2 {
+        margin-left: 2vw;
+    }
+
+    .secondh2 h4 {
+        font-size: 3vw;
+        margin-top: 6px;
+    }
+
+    .thiredh3 {
+        margin-top: 24px;
+    }
+
+    .thiredh3 h3 {
+        font-size: 3.5vw;
+    }
+
+    .ancortags {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 36px;
+        gap: 12px;
+    }
+
+    .ancortags a {
+        font-size: 4vw;
+    }
+
+    .cir1, .cir2 {
+        width: 28px;
+        height: 28px;
+    }
+
+    .secondpart2 {
+        padding: 16px;
+    }
+
+    .secondpart2 .firh1tag h1 {
+        font-size: 11vw;
+    }
+
+    .firh1tag {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-block: 20px;
+        gap: 12px;
+    }
+
+    .firh1tag img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .buttonfirst {
+        font-size: 14px;
+        padding: 10px 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .thirdsection {
+        height: auto;
+        flex-direction: column;
+        padding: 40px 16px;
+        gap: 24px;
+    }
+
+    .themodel img {
+        width: 160px;
+        height: 160px;
+        margin-left: 0;
+    }
+
+    .textpara {
+        width: 100%;
+        height: auto;
+    }
+
+    .lets-talk {
+        width: 100%;
+        height: 38px;
+        font-size: 14px;
+    }
+}
